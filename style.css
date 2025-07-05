@@ -148,11 +148,22 @@ label {
   z-index: 10; /* Bring p8 to the very front during its flip */
 }
 
-h1,
+h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  border-bottom: 2px dashed #6f4f28; /* Match theme color */
+  /* H1 is left-aligned by default, no text-align needed here */
+}
+
 h2 {
   margin: 10px 0;
   font-size: 24px;
   border-bottom: 2px dashed #6f4f28; /* Match theme color */
+}
+
+/* Center h2 for all pages except p1 */
+.page:not(.p1) h2 {
+  text-align: center;
 }
 
 p {
