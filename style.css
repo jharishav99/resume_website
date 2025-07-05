@@ -243,3 +243,7 @@ a {
     margin-bottom: 15px;
   }
 }
+.toc-list {
+  list-style-type: none; /* This removes the default bullets */
+  padding-left: 0; /* You might also want to remove default left padding */
+}
